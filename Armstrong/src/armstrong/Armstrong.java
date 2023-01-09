@@ -1,0 +1,49 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+ */
+package armstrong;
+
+
+public class Armstrong {
+
+   
+    public static void main(String[] args) {
+        int num,num1;
+        int rem,rem1;
+        int sum,prod;
+        int num2,i,count;
+        num=100;
+        for(int j=0;j<=num;j++)
+        {
+            sum=0;
+            num1=j;
+            num2=j;
+            count=0;
+            while(num2>0)
+            {
+                rem1=num2%10;
+                count++;
+                num2=num2/10;
+            }
+            while(num1>0)
+            {
+                rem=num1%10;
+                prod=1;
+                for(i=0;i<count;i++)
+                {
+                    prod=prod*rem;
+                }
+                sum=sum+prod;
+                num1=num1/10;
+            }
+            if(sum==j)
+            {
+                 System.out.println(+sum);
+                 System.out.println("\n");
+            }
+
+        }
+    }
+    
+}

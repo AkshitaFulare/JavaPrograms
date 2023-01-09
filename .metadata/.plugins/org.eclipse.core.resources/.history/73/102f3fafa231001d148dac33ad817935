@@ -1,0 +1,28 @@
+class student {
+	private int rollNo;
+	private string firstName;
+	private string lastName;
+	private int age;
+	private char section;
+    
+	public void setRollNo(int rollNo)
+	{
+		this.rollNo = rollNo;
+	}
+	public void setFirstName(String firstName)
+	{
+		this.firstName = firstName;
+	}
+	public void setLastName(String lastName)
+	{
+		this.lastName = lastName;
+	}
+	public void setAge(int age)
+	{
+		this.age = age;
+	}
+	public void setSection(char section)
+	{
+		
+	}
+}
